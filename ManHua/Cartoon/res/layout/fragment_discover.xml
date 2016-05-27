@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/distory_head"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5" >
+
+                <com.example.customview.MyJazzyViewPager
+                    android:id="@+id/jazzyViewpager_discover"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#000"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView1_discover_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="热门专题"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/textView1_discover_hotmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView1_discover_hot"
+                    android:layout_alignBottom="@+id/textView1_discover_hot"
+                    android:layout_alignParentRight="true"
+                    android:text="更多"
+                    android:textColor="#ee000000"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5" >
+
+                <LinearLayout
+                    
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                    
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot1"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                        
+                    
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot2"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot3"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot4"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                	<com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot5"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />   
+                        <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot6"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                        
+                    
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot7"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot8"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot9"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                	<com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/hot10"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />  
+                </LinearLayout>
+                
+            </HorizontalScrollView>
+			
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/textView1_discover_new"
+                    android:textSize="21sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="最新跟新" />
+
+                <TextView
+                    android:id="@+id/textView1_discover_newmore"
+                    android:textSize="17sp"
+                    android:textColor="#ee000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="更多" />
+
+                <TextView
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#000"
+                    android:text="" />
+
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new1"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                        
+                    
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new2"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new3"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new4"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                	<com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new5"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />  
+                        <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new6"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                        
+                    
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new7"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <!-- <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new8"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new9"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                	<com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/new10"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />   -->
+
+                    
+                </LinearLayout>
+            </HorizontalScrollView>
+			
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/textView1_discover_recommend"
+                    android:textSize="21sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="编辑推荐" />
+
+                <TextView
+                    android:id="@+id/textView1_discover_recommendmore"
+                    android:textSize="17sp"
+                    android:textColor="#ee000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="更多" />
+
+                <TextView
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#000"
+                    android:text="" />
+
+            </RelativeLayout>
+            
+            
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                	
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend1"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                        
+                    
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend2"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend3"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend4"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                	<com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend5"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />   
+                       <!--  <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend6"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                        
+                    
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend7"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend8"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        /> -->
+                    <!-- <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend9"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                	<com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/recommend10"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />  --> 
+                    
+                    
+                </LinearLayout>
+            </HorizontalScrollView>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                 android:layout_marginTop="10dp"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/textView1_discover_all"
+                    android:textSize="21sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="所有专题" />
+
+                <TextView
+                    android:id="@+id/textView1_discover_allmore"
+                    android:textSize="17sp"
+                    android:textColor="#ee000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="更多" />
+
+                <TextView
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#000"
+                    android:text="" />
+
+            </RelativeLayout>
+            
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                	
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all1"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                        
+                    
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all2"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all3"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all4"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                	<com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all5"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />   
+                        <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all6"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                        
+                    
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all7"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all8"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                    <com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all9"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />
+                	<com.example.customview.DiscoverItem 
+                        
+                        android:id="@+id/all10"
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        
+                        />  
+                    
+                    
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
