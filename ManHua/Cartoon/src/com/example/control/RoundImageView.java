@@ -36,6 +36,8 @@ public class RoundImageView extends ImageView {
 
 
 
+
+
 	@Override
 	protected void onDraw(Canvas canvas) {
 
